@@ -13,20 +13,5 @@ export class ColorSample {
     @Input()
     color:string;
     size:string;
-
-    @Output("color")
-    colorOutput = new EventEmitter();
-
-    @Output("size") 
-    sizeOutput = new EventEmitter();
-
-    changeColor(input:string) {
-       this.color = input
-       this.colorOutput.emit(input)
-    }
-
-    changeSize(size:string) {
-        this.size = size
-        this.sizeOutput.emit(size)
-    }
+    text:string;
 }
