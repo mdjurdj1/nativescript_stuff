@@ -6,7 +6,7 @@ import { ColorSample } from "./color-sample/color_sampler.component";
 
 @Component({
     selector: 'app',
-    template: `<color_sample color="red"></color_sample>
+    template: `<color_sample color="red" size="0px"></color_sample>
     `
 })
 export class App {

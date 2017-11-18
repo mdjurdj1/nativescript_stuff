@@ -1,3 +1,6 @@
 <h1>GET ITTT</h1>
-<div class="colorBox" [ngStyle]="{'backgroundColor':color}"></div>
-<input #colorField type="text" placeholder="Type Your Color here..." (input)="changeColor(colorField.value)" (color)="colorField.value = $event">
+<div class="colorBox" [ngStyle]="{'backgroundColor':color, 'border-radius':size}"></div>
+<br />
+COLOR: <input #colorField type="text" placeholder="Type Your Color here..." (input)="changeColor(colorField.value)">
+<br />
+RADIUS: <input #radiusField type="text" placeholder="Type Your Radius here..." (input)="changeSize(radiusField.value)" >
