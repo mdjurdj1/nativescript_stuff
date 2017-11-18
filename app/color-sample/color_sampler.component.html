@@ -1,0 +1,3 @@
+<h1>GET ITTT</h1>
+<div class="colorBox" [ngStyle]="{'backgroundColor':color}"></div>
+<input #colorField type="text" placeholder="Type Your Color here..." (input)="changeColor(colorField.value)" (color)="colorField.value = $event">
